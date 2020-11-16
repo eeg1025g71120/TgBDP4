@@ -47,7 +47,9 @@ A phylogenomic analysis is being utilized in this study to compare the relations
 			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}'
 		#KN042408
 			curl -LO 
-			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}''
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}'
+			
+	Cat   > TGBDP4_Phylogenetics_Tree.fa
 		
 		
 A MAFFT analysis is then completed on all the data downloading
