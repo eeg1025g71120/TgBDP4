@@ -15,6 +15,7 @@ First I created a new directory to begin my analysis in:
 	mkdir TgBDP4
 		
 Next, I moved into the newly created directed to begin my analysis:
+	
 	cd TgBDP4 
 
 # Phylogenomics Analysis
