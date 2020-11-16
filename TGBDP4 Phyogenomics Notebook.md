@@ -47,4 +47,14 @@ A phylogenomic analysis is being utilized in this study to compare the relations
 			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}'
 		#KN042408
 			curl -LO 
-			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}'
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}''
+		
+		
+A MAFFT analysis is then completed on all the data downloading
+	
+	mafft --auto TGBDP4_Phylogenetics_Tree.fa > Output_TGBDP4_Phylogenetics_Tree.fa
+Once the MAFFT analysis is complete, the phylogenomic tree can be built utilizing iqtree.
+
+	iqtree -s Output_TGBDP4_Phylogenetics_Tree.fa -m JC -bb 1000 -pre output
+	Cat output.contree
+The output from the cat command will then be copy/pasted into Figtree to yield the phylogenetic trees.
