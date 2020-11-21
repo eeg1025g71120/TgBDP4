@@ -45,7 +45,7 @@ Next, I moved into the newly created directed to begin my analysis:
 	
 	cd TgBDP4 
 
-# Phylogenomics Analysis of TGBDP4 predicted protein sequence
+# Phylogenomics Analysis of TGBDP4 predicted protein sequence within Aplicomplexians 
 A phylogenomic analysis is being utilized in this study to compare the relationships of apicomplexans to Toxoplasma gondii's TgBDP4. The amplicomplexans being compared to the T.gondii's TgBDP were chosen based on a previous blast analysis.
 
 	# Phylogenomics database
@@ -116,7 +116,12 @@ A MAFFT analysis is then completed on the combined data file:
 Once the MAFFT analysis is complete, the phylogenomic tree was built utilizing iqtree.
 
 	iqtree -s Output_TGBDP4_Phylogenetics_Tree.fa -m JC -bb 1000 -pre output
-This iqtree analysis outputs a Tiled called : `output.contree'
+`JC` 
+`-bb`
+This iqtree analysis outputs a Tiled called : `output.contree`
 
 	Cat output.contree
+	
 The output from the cat command will then be copy/pasted into Figtree to yield the phylogenetic trees.
+
+# Results of the Phylogenomics Analysis of TGBDP4 predicted protein sequence within Aplicomplexians 
