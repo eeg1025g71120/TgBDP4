@@ -116,8 +116,10 @@ A MAFFT analysis is then completed on the combined data file:
 Once the MAFFT analysis is complete, the phylogenomic tree was built utilizing iqtree.
 
 	iqtree -s Output_TGBDP4_Phylogenetics_Tree.fa -m JC -bb 1000 -pre output
-`JC` 
-`-bb`
+`JC` is the model utilized to create the phylogenomic tree, which is based on equal substitution rate and equal base frequencies. 
+
+`-bb` is the bootstraping subset utilized to create this phylogenomic tree(1000). 
+
 This iqtree analysis outputs a Tiled called : `output.contree`
 
 	Cat output.contree
