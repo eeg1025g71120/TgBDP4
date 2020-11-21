@@ -1,15 +1,21 @@
-# Analyzing TgBDP4 through BLAST and Phylogenomic Analyses to Access Evolutionary Relationships Amongst Amplicomplexians
+# Analyzing TgBDP4 through BLAST and Phylogenomic Analyses to Access Evolutionary Relationships Amongst Apicomplexians
 
 # Materials
   * PC: Lenova Yoga 730
   * Coding Terminal: PuTTy
   * Preformance Cluster : Ron
-  * Programs:
+  * Programs Utalized:
       * MAFFT
       * iqTree
       * FigTree v1.4.4
+  * Databases Utalized:
+  	* EUPATHdb
+	* Uniprotkb
+# Results from BLAST Analysis
+BLAST is a local alignment anlysis which was preformed through EUPATHdb using the predicted protein sequence for TgBDP4. This BLAST analysis was preformed using a BLOSUM62 Matrix to find similar protein sequences within the Apicomplexians. This BLAST analysis yielded the top 50 apicomplexans that appear to have a similar protein sequence within their genome. This list was further narrowed down through the elimination of multiple samples from the same species.
+These sequences are:
      
-# Setting up:
+# Setting up for the Phylogenomic Analysis:
 First I created a new directory to begin my analysis in:
 	
 	mkdir TgBDP4
@@ -25,30 +31,10 @@ A phylogenomic analysis is being utilized in this study to compare the relations
 		#TGME49_ChrVIIb
 			curl -LO 
 			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}'
-		#TGVEG
+		
 			curl -LO 
 			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}'
-		#KL998088
-			curl -LO 
-			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}'
-		#KX792174.1
-			curl -LO 
-			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}'
-		#ML1130729
-			curl -LO 
-			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}'
-		#KN000275
-			curl -LO 
-			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}'
-		#KNO44666
-			curl -LO 
-			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}'
-		#KN042473
-			curl -LO 
-			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}'
-		#KN042408
-			curl -LO 
-			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}'
+		
 			
 	Cat   > TGBDP4_Phylogenetics_Tree.fa
 		
