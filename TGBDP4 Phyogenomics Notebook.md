@@ -50,8 +50,7 @@ A phylogenomic analysis is being utilized in this study to compare the relations
 
 	# Phylogenomics database
 		#Toxoplasma gondii ME49
-			curl -LO 
-			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}'
+			 awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' TGME49_306460.fa > ToxoME49.fa
 		# Hammondia hammondi strain H.H.34
 			curl -LO 
 			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}'
