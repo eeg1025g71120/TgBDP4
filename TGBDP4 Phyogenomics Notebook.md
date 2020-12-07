@@ -130,3 +130,68 @@ The Output:
 		(Toxoplasma_gondii_ME491:0.050005,Hammondia_hammondi1:0.058172,(Neospora_caninum1:0.289418,(Besnoitia_besnoiti1:0.476065,(Cystoisospora_suis1:0.648511,(Sarcocystis_neurona1:0.522131,((((Eimeria_mitis_Houghton1:0.217398,Eimeria_acervulina_Houghton1:0.108739)100:0.100404,Cyclospora_cayetanensis1:0.450960)90:0.068706,Eimeria_necatrix_Houghton1:0.182584)100:0.721755,(((Cryptosporidium_ubiquitum1:0.155990,(((Cryptosporidium_parvum1:0.012655,Cryptosporidium_tyzzeri1:0.018422)96:0.006612,Cryptosporidium_hominis1:0.020493)100:0.023975,Cryptosporidium_meleagridis1:0.047134)100:0.183798)100:0.320993,Cryptosporidium_andersoni1:0.591399)100:0.551159,(Plasmodium_falciparum1:0.000002,Plasmodium_praefalciparum1:0.002629)100:1.331543)100:0.737380)98:0.179617)54:0.078890)100:0.206511)100:0.187370)100:0.422114);
 
 # Results of the Phylogenomics Analysis of TGBDP4 predicted protein sequence within Aplicomplexians  
+
+# Phylogenomics Analysis of TGBDP4 predicted protein sequence with Uniprot
+		#Toxoplasma gondii ME49
+			 awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' TGME49_306460.fa > Toxoplasma_gondii.fa
+			 awk '/^>/{print ">Toxoplasma_gondii_ME49" ++i; next}{print}' Toxoplasma_gondii.fa > header_Toxoplasma_gondii.fa
+		# Besnoitia besnoiti
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' BESB_018420.fa > Besnoitia_besnoiti.fa
+			awk '/^>/{print ">Besnoitia_besnoiti" ++i; next}{print}' Besnoitia_besnoiti.fa > header_Besnoitia_besnoiti.fa
+		# Chara braunii
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' CBR_g37121.fa > chara_braunii.fa
+			awk '/^>/{print "> chara_braunii" ++i; next}{print}' chara_braunii.fa > header_chara_braunii.fa
+		# Chlamydomonas reinhardtii
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' CHLRE_15g640800v5.fa > Chlamydomonas_reinhardtii.fa
+			awk '/^>/{print " chlamydomonas_reinhardtii" ++i; next}{print}' chlamydomonas_reinhardtii.fa > header_ chlamydomonas_reinhardtii.fa
+		# Cyclospora cayetanensis
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' cyc_01595.fa> cyclospora_cayetanensis.fa
+			awk '/^>/{print "> cyclospora_cayetanensis" ++i; next}{print}' cyclospora_cayetanensis.fa > header_ cyclospora_cayetanensis.fa
+		# Cystoisospora suis
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' CSUI_003223.fa > cystoisospora_suis.fa
+			awk '/^>/{print "> cystoisospora_suis" ++i; next}{print}' cystoisospora_suis.fa > header_ cystoisospora_suis.fa
+		# Eimeria mitis
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' EMH_0040220.fa > Eimeria_mitis.fa
+			awk '/^>/{print ">Eimeria_mitis” ++i; next}{print}' Eimeria_mitis.fa > header_Eimeria_mitis.fa
+
+		# Eimeria necatrix 
+		awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' ENH_00043160.fa> Eimeria_necatrix.fa
+			awk '/^>/{print ">Eimeria_necatrix " ++i; next}{print}' Eimeria_necatrix.fa > header_Eimeria_necatrix.fa
+		# Eimeria praecox
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' EPH_0031840 .fa > Eimeria_praecox.fa
+			awk '/^>/{print ">Eimeria_praecox " ++i; next}{print}' Eimeria_praecox.fa > header_Eimeria_praecox.fa
+
+		# Neospora caninum
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' BN1204_044660.fa > Neospora_caninum.fa
+			awk '/^>/{print "> Neospora_caninum" ++i; next}{print}' Neospora_caninum.fa > header_ Neospora_caninum.fa
+		# Eimeria acervulina
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' EAH_00010620.fa > Eimeria_acervulina.fa
+			awk '/^>/{print ">Eimeria_acervulina++i; next}{print}' Eimeria_acervulina.fa > header_Eimeria_acervulina.fa
+		# Eimeria brunetti
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' EBH_0065380.fa > Eimeria¬_brunetti.fa
+			awk '/^>/{print "> Eimeria¬_brunetti" ++i; next}{print}' Eimeria_brunetti.fa > header_ Eimeria¬_brunetti.fa
+		# Eimeria maxima
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' EMWEY_00000760.fa > Eimeria_maxima.fa
+			awk '/^>/{print "> Eimeria_maxima" ++i; next}{print}' Eimeria_maxima.fa > header_ Eimeria_maxima.fa
+		# Plasmodium falciparum
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' PFFCH_03719.fa > Plasmodium_falciparum.fa
+			awk '/^>/{print "> Plasmodium_falciparum" ++i; next}{print}' Plasmodium_falciparum.fa > header_Plasmodium_falciparum.fa
+
+		# Leishmania major ppg1
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' LMJF_35_0550.fa > Leishmania_major_ppg1.fa
+			awk '/^>/{print "> Leishmania_major_ppg1" ++i; next}{print}' Leishmania_major_ppg1.fa > header_ Leishmania_major_ppg1.fa
+		# Leishmania major ppg 5
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' LMJF_35_0540.fa > Leishmania_major_ppg_5.fa
+			awk '/^>/{print "> Leishmania_major_ppg_5" ++i; next}{print}' Leishmania_major_ppg_5.fa > header_Leishmania_major_ppg_5.fa
+		# Leishmania_major_ppg_4
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' LMJF_35_0520.fa > Leishmania_major_ppg_4.fa
+			awk '/^>/{print "> Leishmania_major_ppg_4" ++i; next}{print}' Leishmania_major_ppg_4.fa > header_ Leishmania_major_ppg_4.fa
+		# Leishmania infantum ppg3
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' LINJ_35_0500.fa > Leishmania_infantum_ppg3.fa
+			awk '/^>/{print "> Leishmania_infantum_ppg3" ++i; next}{print}' Leishmania_infantum_ppg3.fa > header_ Leishmania_infantum_ppg3.fa
+		# Leishmania braziliensis
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' LBRM_34_0540.fa > Leishmania_braziliensis.fa
+			awk '/^>/{print "> Leishmania_braziliensis " ++i; next}{print}' Leishmania_braziliensis.fa > header_ Leishmania_braziliensis.fa
+		# Leishmania infantum ppg4
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' LINJ_35_0490.fa > Leishmania_infantum_ppg4.fa
+			awk '/^>/{print "> Leishmania_infantum_ppg4" ++i; next}{print}' Leishmania_infantum_ppg4.fa> header_ Leishmania_infantum_ppg4.fa
