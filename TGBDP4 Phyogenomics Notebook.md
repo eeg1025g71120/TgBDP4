@@ -188,31 +188,31 @@ A secondary BLAST was run comparing TgBDP4’s predicted protein sequence to sim
 			 awk '/^>/{print ">Toxoplasma_gondii_ME49" ++i; next}{print}' Toxoplasma_gondii.fa > header_Toxoplasma_gondii.fa
 		# Neospora caninum Liverpool
 			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' XP_003881437.fa > Neospora_caninum.fa
-			awk '/^>/{print ">Neospora_caninum " ++i; next}{print}' Neospora_caninum.fa > header_Neospora_caninum.fa
+			awk '/^>/{print ">Neospora_caninum" ++i; next}{print}' Neospora_caninum.fa > header_Neospora_caninum.fa
 		# Besnoitia besnoiti: 
 			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' XP_029216533.fa > Besnoitia_besnoiti.fa
 			awk '/^>/{print ">Besnoitia_besnoiti" ++i; next}{print}' Besnoitia_besnoiti.fa > header_Besnoitia_besnoiti.fa
 		# Cystoisospora suis
 			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' PHJ22926.fa > Cystoisospora_suis.fa
-			awk '/^>/{print ">Cystoisospora_suis " ++i; next}{print}' Cystoisospora_suis.fa > header_Cystoisospora_suis.fa
+			awk '/^>/{print ">Cystoisospora_suis" ++i; next}{print}' Cystoisospora_suis.fa > header_Cystoisospora_suis.fa
 		# Eimeria praecox: CDI74223
 			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' CDI74223.fa > Eimeria_praecox.fa
-			awk '/^>/{print "> Eimeria_praecox " ++i; next}{print}' Eimeria_praecox.fa > header_Eimeria_praecox.fa
+			awk '/^>/{print ">Eimeria_praecox" ++i; next}{print}' Eimeria_praecox.fa > header_Eimeria_praecox.fa
 		# Eimeria mitis: 
 			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' XP_013350930.fa > Eimeria_mitis.fa
-			awk '/^>/{print "> Eimeria_mitis " ++i; next}{print}' Eimeria_mitis.fa > header_Eimeria_mitis.fa
+			awk '/^>/{print ">Eimeria_mitis" ++i; next}{print}' Eimeria_mitis.fa > header_Eimeria_mitis.fa
 		# Eimeria necatrix: 
-			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' XP_013436311.fa > Eimeria¬_necatrix.fa
-			awk '/^>/{print "> Eimeria¬_necatrix " ++i; next}{print}' Eimeria¬_necatrix.fa > header_Eimeria¬_necatrix.fa
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' XP_013436311.fa > Eimeria_necatrix.fa
+			awk '/^>/{print ">Eimeria_necatrix" ++i; next}{print}' Eimeria_necatrix.fa > header_Eimeria_necatrix.fa
 		# Cyclospora cayetanensis: 
 			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' OEH79948.fa > Cyclospora_cayetanensis.fa
-			awk '/^>/{print ">Cyclospora_cayetanensis " ++i; next}{print}' Cyclospora_cayetanensis.fa > header_Cyclospora_cayetanensis.fa
+			awk '/^>/{print ">Cyclospora_cayetanensis" ++i; next}{print}' Cyclospora_cayetanensis.fa > header_Cyclospora_cayetanensis.fa
 		# Eimeria acervuline: 
 			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' XP_013250528.fa > Eimeria_acervuline.fa
-			awk '/^>/{print ">Eimeria_acervuline " ++i; next}{print}' Eimeria_acervuline.fa > header_Eimeria_acervuline.fa
+			awk '/^>/{print ">Eimeria_acervuline" ++i; next}{print}' Eimeria_acervuline.fa > header_Eimeria_acervuline.fa
 		# Cryptosporidium felis: 
 			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' KAF7457151.fa > Cryptosporidium_felis.fa
-			awk '/^>/{print ">Cryptosporidium_felis " ++i; next}{print}' Cryptosporidium_felis.fa > header_Cryptosporidium_felis.fa
+			awk '/^>/{print ">Cryptosporidium_felis" ++i; next}{print}' Cryptosporidium_felis.fa > header_Cryptosporidium_felis.fa
 		# Plasmodium Falciparum: 
 			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' 4NXJ_A.fa > Plasmodium_Falciparum.fa
 			awk '/^>/{print ">Plasmodium_Falciparum " ++i; next}{print}' Plasmodium_Falciparum.fa > header_Plasmodium_Falciparum.fa
@@ -224,31 +224,31 @@ A secondary BLAST was run comparing TgBDP4’s predicted protein sequence to sim
 			awk '/^>/{print ">Cryptosporidium_meleagridis " ++i; next}{print}' Cryptosporidium_meleagridis.fa > header_Cryptosporidium_meleagridis.fa
 		# Cryptosporidium parvum: 
 			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' XP_628299.fa > Cryptosporidium_parvum.fa
-			awk '/^>/{print ">Cryptosporidium_parvum " ++i; next}{print}' Cryptosporidium_parvum.fa > header_Cryptosporidium_parvum.fa
+			awk '/^>/{print ">Cryptosporidium_parvum" ++i; next}{print}' Cryptosporidium_parvum.fa > header_Cryptosporidium_parvum.fa
 		# Cryptosporidium hominis:
 			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' PPS94707.fa > Cryptosporidium_hominis.fa
-			awk '/^>/{print ">Cryptosporidium_hominis " ++i; next}{print}' Cryptosporidium_hominis.fa > header_Cryptosporidium_hominis.fa
+			awk '/^>/{print ">Cryptosporidium_hominis" ++i; next}{print}' Cryptosporidium_hominis.fa > header_Cryptosporidium_hominis.fa
 		# Cryptosporidium tyzzeri: 
-			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' TRY50306.fa > Cryptosporidium¬_tyzzeri.fa
-			awk '/^>/{print ">Cryptosporidium¬_tyzzeri " ++i; next}{print}' Cryptosporidium¬_tyzzeri.fa > header_Cryptosporidium¬_tyzzeri.fa
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' TRY50306.fa > Cryptosporidium_tyzzeri.fa
+			awk '/^>/{print ">Cryptosporidium_tyzzeri " ++i; next}{print}' Cryptosporidium_tyzzeri.fa > header_Cryptosporidium_tyzzeri.fa
 		# Cryptosporidium andersoni: 
 			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' OII75837.fa > Cryptosporidium_andersoni.fa
-			awk '/^>/{print "> Cryptosporidium_andersoni" ++i; next}{print}' Cryptosporidium_andersoni.fa > header_Cryptosporidium_andersoni.fa
+			awk '/^>/{print ">Cryptosporidium_andersoni" ++i; next}{print}' Cryptosporidium_andersoni.fa > header_Cryptosporidium_andersoni.fa
 		# Cryptosporidium muris RN66: 
 			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' XP_002141275.fa > Cryptosporidium_muris.fa
-			awk '/^>/{print ">Cryptosporidium_muris " ++i; next}{print}' Cryptosporidium_muris.fa > header_Cryptosporidium_muris.fa
+			awk '/^>/{print ">Cryptosporidium_muris" ++i; next}{print}' Cryptosporidium_muris.fa > header_Cryptosporidium_muris.fa
 		# Plasmodium reichenowi: 
 			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' SOV83627.fa > Plasmodium_reichenowi.fa
 			awk '/^>/{print ">Plasmodium_reichenowi " ++i; next}{print}' Plasmodium_reichenowi.fa > header_Plasmodium_reichenowi.fa
 		# Marchantia polymorpha:
 			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' PTQ48795.fa > Marchantia_polymorpha.fa
-			awk '/^>/{print "> Marchantia_polymorpha " ++i; next}{print}' Marchantia_polymorpha.fa > header_Marchantia_polymorpha.fa
+			awk '/^>/{print ">Marchantia_polymorpha " ++i; next}{print}' Marchantia_polymorpha.fa > header_Marchantia_polymorpha.fa
 		# Plasmodium gaboni:
 			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' XP_018639804.fa > Plasmodium_gaboni.fa
 			awk '/^>/{print ">Plasmodium_gaboni " ++i; next}{print}' Plasmodium_gaboni.fa > header_Plasmodium_gaboni.fa
 		# Plasmodium sp. DRC-Itaito:
 			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' SOV25474.fa > Plasmodium_sp_DRC.fa
-			awk '/^>/{print "> Plasmodium_sp_DRC-Itaito" ++i; next}{print}' Plasmodium_sp_DRC.fa > header_Plasmodium_sp_DRC.fa
+			awk '/^>/{print ">Plasmodium_sp_DRC-Itaito" ++i; next}{print}' Plasmodium_sp_DRC.fa > header_Plasmodium_sp_DRC.fa
 		# Plasmodium sp. gorilla clade G1:
 			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' SOS81579.fa > Plasmodium_sp_gorilla.fa
 			awk '/^>/{print ">Plasmodium_sp_gorilla " ++i; next}{print}' Plasmodium_sp_gorilla.fa > header_Plasmodium_sp_gorilla.fa
@@ -338,5 +338,5 @@ A secondary BLAST was run comparing TgBDP4’s predicted protein sequence to sim
 			awk '/^>/{print ">Digitaria_exilis " ++i; next}{print}' Digitaria_exilis.fa > header_Digitaria_exilis.fa
 Once all of the sequences where downloaded and formated, the files are then combined cat into a single file:
 		
-		cat header_Toxoplasma_gondii.fa header_Neospora_caninum.fa header_Besnoitia_besnoiti.fa header_Cystoisospora_suis.fa header_Eimeria_praecox.fa header_Eimeria_mitis.fa header_Eimeria¬_necatrix.fa header_Cyclospora_cayetanensis.fa header_Eimeria_acervuline.fa header_Cryptosporidium_felis.fa header_Plasmodium_Falciparum.fa header_Cryptosporidium_ubiquitum.fa header_Cryptosporidium_meleagridis.fa header_Cryptosporidium_parvum.fa header_Cryptosporidium_hominis.fa header_Cryptosporidium¬_tyzzeri.fa header_Cryptosporidium_andersoni.fa header_Cryptosporidium_muris.fa header_Plasmodium_reichenowi.fa header_Marchantia_polymorpha.fa header_Plasmodium_gaboni.fa header_Plasmodium_sp_DRC.fa header_Plasmodium_sp_gorilla.fa header_Hepatocystis_sp.fa header_Ceratodon_purpureus.fa header_Plasmodium_vivax.fa header_Plasmodium_ovale.fa header_Trifolium_subterraneum.fa header_Chara_braunii.fa header_Plasmodium_knowlesi.fa header_Elaeis_guineensis.fa header_Plasmodium_fragile.fa header_Thalictrum_thalictroides.fa header_Plasmodium_relictum.fa header_Plasmodium_malariae.fa header_Musa_balbisiana.fa header_Plasmodium_inui.fa header_Plasmodium_gallinaceum.fa header_Ananas_comosus.fa header_Theileria_equi.fa header_Populus_euphratica.fa header_Musa_acuminata.fa header_Populus_deltoides.fa header_Populus_trichocarpa.fa header_Eragrostis_curvula.fa header_Trifolium_pratense.fa header_Coregonus_sp.fa header_Phoenix_dactylifera.fa header_Plasmodium_gonderi.fa header_Vanilla_planifolia.fa header_Digitaria_exilis.fa > TGBDP4_NCBI_Phylogenetics_Tree.fa
+		cat header_Toxoplasma_gondii.fa header_Neospora_caninum.fa header_Besnoitia_besnoiti.fa header_Cystoisospora_suis.fa header_Eimeria_praecox.fa header_Eimeria_mitis.fa header_Eimeria_necatrix.fa header_Cyclospora_cayetanensis.fa header_Eimeria_acervuline.fa header_Cryptosporidium_felis.fa header_Plasmodium_Falciparum.fa header_Cryptosporidium_ubiquitum.fa header_Cryptosporidium_meleagridis.fa header_Cryptosporidium_parvum.fa header_Cryptosporidium_hominis.fa header_Cryptosporidium_tyzzeri.fa header_Cryptosporidium_andersoni.fa header_Cryptosporidium_muris.fa header_Plasmodium_reichenowi.fa header_Marchantia_polymorpha.fa header_Plasmodium_gaboni.fa header_Plasmodium_sp_DRC.fa header_Plasmodium_sp_gorilla.fa header_Hepatocystis_sp.fa header_Ceratodon_purpureus.fa header_Plasmodium_vivax.fa header_Plasmodium_ovale.fa header_Trifolium_subterraneum.fa header_Chara_braunii.fa header_Plasmodium_knowlesi.fa header_Elaeis_guineensis.fa header_Plasmodium_fragile.fa header_Thalictrum_thalictroides.fa header_Plasmodium_relictum.fa header_Plasmodium_malariae.fa header_Musa_balbisiana.fa header_Plasmodium_inui.fa header_Plasmodium_gallinaceum.fa header_Ananas_comosus.fa header_Theileria_equi.fa header_Populus_euphratica.fa header_Musa_acuminata.fa header_Populus_deltoides.fa header_Populus_trichocarpa.fa header_Eragrostis_curvula.fa header_Trifolium_pratense.fa header_Coregonus_sp.fa header_Phoenix_dactylifera.fa header_Plasmodium_gonderi.fa header_Vanilla_planifolia.fa header_Digitaria_exilis.fa > TGBDP4_NCBI_Phylogenetics_Tree.fa
 
