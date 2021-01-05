@@ -228,6 +228,36 @@ A secondary BLAST was run comparing TgBDP4’s predicted protein sequence to sim
 		# Cryptosporidium hominis:
 			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' PPS94707.fa > Cryptosporidium_hominis.fa
 			awk '/^>/{print ">Cryptosporidium_hominis " ++i; next}{print}' Cryptosporidium_hominis.fa > header_Cryptosporidium_hominis.fa
+		# Cryptosporidium tyzzeri: 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' TRY50306.fa > Cryptosporidium¬_tyzzeri.fa
+			awk '/^>/{print ">Cryptosporidium¬_tyzzeri " ++i; next}{print}' Cryptosporidium¬_tyzzeri.fa > header_Cryptosporidium¬_tyzzeri.fa
+		# Cryptosporidium andersoni: 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' OII75837.fa > Cryptosporidium_andersoni.fa
+			awk '/^>/{print "> Cryptosporidium_andersoni" ++i; next}{print}' Cryptosporidium_andersoni.fa > header_Cryptosporidium_andersoni.fa
+		# Cryptosporidium muris RN66: 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' XP_002141275.fa > Cryptosporidium_muris.fa
+			awk '/^>/{print ">Cryptosporidium_muris " ++i; next}{print}' Cryptosporidium_muris.fa > header_Cryptosporidium_muris.fa
+		# Plasmodium reichenowi: 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' SOV83627.fa > Plasmodium_reichenowi.fa
+			awk '/^>/{print ">Plasmodium_reichenowi " ++i; next}{print}' Plasmodium_reichenowi.fa > header_Plasmodium_reichenowi.fa
+		# Marchantia polymorpha:
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' PTQ48795.fa > Marchantia_polymorpha.fa
+			awk '/^>/{print "> Marchantia_polymorpha " ++i; next}{print}' Marchantia_polymorpha.fa > header_Marchantia_polymorpha.fa
+		# Plasmodium gaboni:
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' XP_018639804.fa > Plasmodium_gaboni.fa
+			awk '/^>/{print ">Plasmodium_gaboni " ++i; next}{print}' Plasmodium_gaboni.fa > header_Plasmodium_gaboni.fa
+		# Plasmodium sp. DRC-Itaito:
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' SOV25474.fa > Plasmodium_sp_DRC.fa
+			awk '/^>/{print "> Plasmodium_sp_DRC-Itaito" ++i; next}{print}' Plasmodium_sp_DRC.fa > header_Plasmodium_sp_DRC.fa
+		# Plasmodium sp. gorilla clade G1:
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' SOS81579.fa > Plasmodium_sp_gorilla.fa
+			awk '/^>/{print ">Plasmodium_sp_gorilla " ++i; next}{print}' Plasmodium_sp_gorilla.fa > header_Plasmodium_sp_gorilla.fa
+		# Hepatocystis sp. ex Piliocolobus tephrosceles : 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' VWU51739.fa > Hepatocystis_sp.fa
+			awk '/^>/{print ">Hepatocystis_sp" ++i; next}{print}' Hepatocystis_sp.fa > header_Hepatocystis_sp.fa
+		# Ceratodon purpureus: 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' KAG0617482.fa > Ceratodon_purpureus.fa
+			awk '/^>/{print ">Ceratodon_purpureus" ++i; next}{print}' Ceratodon_purpureus.fa > header_Ceratodon_purpureus.fa
 
 
 		
