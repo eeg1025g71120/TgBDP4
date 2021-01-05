@@ -186,4 +186,48 @@ A secondary BLAST was run comparing TgBDP4’s predicted protein sequence to sim
 		#Toxoplasma gondii ME49
 			 awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' TGME49_306460.fa > Toxoplasma_gondii.fa
 			 awk '/^>/{print ">Toxoplasma_gondii_ME49" ++i; next}{print}' Toxoplasma_gondii.fa > header_Toxoplasma_gondii.fa
+		# Neospora caninum Liverpool
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' XP_003881437.fa > Neospora_caninum.fa
+			awk '/^>/{print ">Neospora_caninum " ++i; next}{print}' Neospora_caninum.fa > header_Neospora_caninum.fa
+		# Besnoitia besnoiti: 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' XP_029216533.fa > Besnoitia_besnoiti.fa
+			awk '/^>/{print ">Besnoitia_besnoiti" ++i; next}{print}' Besnoitia_besnoiti.fa > header_Besnoitia_besnoiti.fa
+		# Cystoisospora suis
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' PHJ22926.fa > Cystoisospora_suis.fa
+			awk '/^>/{print ">Cystoisospora_suis " ++i; next}{print}' Cystoisospora_suis.fa > header_Cystoisospora_suis.fa
+		# Eimeria praecox: CDI74223
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' CDI74223.fa > Eimeria_praecox.fa
+			awk '/^>/{print "> Eimeria_praecox " ++i; next}{print}' Eimeria_praecox.fa > header_Eimeria_praecox.fa
+		# Eimeria mitis: 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' XP_013350930.fa > Eimeria_mitis.fa
+			awk '/^>/{print "> Eimeria_mitis " ++i; next}{print}' Eimeria_mitis.fa > header_Eimeria_mitis.fa
+		# Eimeria necatrix: 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' XP_013436311.fa > Eimeria¬_necatrix.fa
+			awk '/^>/{print "> Eimeria¬_necatrix " ++i; next}{print}' Eimeria¬_necatrix.fa > header_Eimeria¬_necatrix.fa
+		# Cyclospora cayetanensis: 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' OEH79948.fa > Cyclospora_cayetanensis.fa
+			awk '/^>/{print ">Cyclospora_cayetanensis " ++i; next}{print}' Cyclospora_cayetanensis.fa > header_Cyclospora_cayetanensis.fa
+		# Eimeria acervuline: 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' XP_013250528.fa > Eimeria_acervuline.fa
+			awk '/^>/{print ">Eimeria_acervuline " ++i; next}{print}' Eimeria_acervuline.fa > header_Eimeria_acervuline.fa
+		# Cryptosporidium felis: 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' KAF7457151.fa > Cryptosporidium_felis.fa
+			awk '/^>/{print ">Cryptosporidium_felis " ++i; next}{print}' Cryptosporidium_felis.fa > header_Cryptosporidium_felis.fa
+		# Plasmodium Falciparum: 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' 4NXJ_A.fa > Plasmodium_Falciparum.fa
+			awk '/^>/{print ">Plasmodium_Falciparum " ++i; next}{print}' Plasmodium_Falciparum.fa > header_Plasmodium_Falciparum.fa
+		# Cryptosporidium ubiquitum:
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' XP_028875204.fa > Cryptosporidium_ubiquitum.fa
+			awk '/^>/{print ">Cryptosporidium_ubiquitum " ++i; next}{print}' Cryptosporidium_ubiquitum.fa > header_Cryptosporidium_ubiquitum.fa
+		# Cryptosporidium meleagridis: 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' POM84118.fa > Cryptosporidium_meleagridis.fa
+			awk '/^>/{print ">Cryptosporidium_meleagridis " ++i; next}{print}' Cryptosporidium_meleagridis.fa > header_Cryptosporidium_meleagridis.fa
+		# Cryptosporidium parvum: 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' XP_628299.fa > Cryptosporidium_parvum.fa
+			awk '/^>/{print ">Cryptosporidium_parvum " ++i; next}{print}' Cryptosporidium_parvum.fa > header_Cryptosporidium_parvum.fa
+		# Cryptosporidium hominis:
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' PPS94707.fa > Cryptosporidium_hominis.fa
+			awk '/^>/{print ">Cryptosporidium_hominis " ++i; next}{print}' Cryptosporidium_hominis.fa > header_Cryptosporidium_hominis.fa
+
+
 		
