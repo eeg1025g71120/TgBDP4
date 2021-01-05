@@ -291,9 +291,48 @@ A secondary BLAST was run comparing TgBDP4’s predicted protein sequence to sim
 		# Musa balbisiana:
 			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' THU69887.fa > Musa_balbisiana.fa
 			awk '/^>/{print ">Musa_balbisiana" ++i; next}{print}' Musa_balbisiana.fa  > header_Musa_balbisiana.fa
-		# Plasmodium inui San Antonio 1:XP_008819439
+		# Plasmodium inui San Antonio 1
 			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' XP_008819439.fa > Plasmodium_inui.fa
 			awk '/^>/{print ">Plasmodium_inui " ++i; next}{print}' Plasmodium_inui.fa  > header_Plasmodium_inui.fa
-
-
-		
+		# Plasmodium gallinaceum
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' XP_028527377.fa > Plasmodium_gallinaceum.fa
+			awk '/^>/{print ">Plasmodium_gallinaceum " ++i; next}{print}' Plasmodium_gallinaceum.fa > header_Plasmodium_gallinaceum.fa
+		# Ananas comosus
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' OAY69483.fa > Ananas_comosus.fa
+			awk '/^>/{print ">Ananas_comosus " ++i; next}{print}' Ananas_comosus.fa > header_Ananas_comosus.fa
+		# Theileria equi strain WA
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' XP_004828861.fa > Theileria_equi.fa
+			awk '/^>/{print ">Theileria_equi " ++i; next}{print}' Theileria_equi.fa > header_Theileria_equi.fa
+		# Populus euphratica 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' XP_011040801.fa > Populus_euphratica.fa
+			awk '/^>/{print ">Populus_euphratica " ++i; next}{print}' Populus_euphratica.fa > header_Populus_euphratica.fa
+		# Musa acuminata subsp. malaccensis
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' XP_018686019.fa > Musa_acuminata.fa
+			awk '/^>/{print ">Musa_acuminata " ++i; next}{print}' Musa_acuminata.fa > header_Musa_acuminata.fa
+		# Populus deltoides
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' KAF9856795.fa > Populus_deltoides.fa
+			awk '/^>/{print ">Populus_deltoides " ++i; next}{print}' Populus_deltoides.fa > header_Populus_deltoides.fa
+		# Populus trichocarpa
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' XP_006384849.fa > Populus_trichocarpa.fa
+			awk '/^>/{print ">Populus_trichocarpa " ++i; next}{print}' Populus_trichocarpa.fa > header_Populus_trichocarpa.fa
+		# Eragrostis curvula
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' TVU10293.fa > Eragrostis_curvula.fa
+			awk '/^>/{print ">Eragrostis_curvula " ++i; next}{print}' Eragrostis_curvula.fa > header_Eragrostis_curvula.fa
+		# Trifolium pratense: 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' PNY12559.fa > Trifolium_pratense.fa
+			awk '/^>/{print ">Trifolium_pratense " ++i; next}{print}' Trifolium_pratense.fa > header_Trifolium_pratense.fa
+		# Coregonus sp. 'balchen'
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' CAB1317005.fa > Coregonus_sp.fa
+			awk '/^>/{print ">Coregonus_sp " ++i; next}{print}' Coregonus_sp.fa > header_Coregonus_sp.fa
+		# Phoenix dactylifera
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' XP_008812297.fa > Phoenix_dactylifera.fa
+			awk '/^>/{print ">Phoenix_dactylifera " ++i; next}{print}' Phoenix_dactylifera.fa > header_Phoenix_dactylifera.fa
+		# Plasmodium gonderi
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' XP_028545308.fa > Plasmodium_gonderi.fa
+			awk '/^>/{print ">Plasmodium_gonderi " ++i; next}{print}' Plasmodium_gonderi.fa > header_Plasmodium_gonderi.fa
+		# Vanilla planifolia 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' KAG0490016.fa > Vanilla_planifolia.fa
+			awk '/^>/{print ">Vanilla_planifolia" ++i; next}{print}' Vanilla_planifolia.fa > header_Vanilla_planifolia.fa
+		# Digitaria exilis
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' CAB3457785.fa > Digitaria_exilis.fa
+			awk '/^>/{print ">Digitaria_exilis " ++i; next}{print}' Digitaria_exilis.fa > header_Digitaria_exilis.fa
