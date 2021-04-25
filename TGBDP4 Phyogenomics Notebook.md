@@ -469,8 +469,29 @@ The Output:
 		# Sporisorium reilianum SRZ2 
 			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' sr16504.fa > Sporisorium_reilianum.fa
 			awk '/^>/{print ">Sporisorium_reilianum" ++i; next}{print}' Sporisorium_reilianum.fa > header_Sporisorium_reilianum.fa
-	cat header_Toxoplasma_gondii.fa header_Acanthamoeba_castellanii.fa header_Acanthamoeba_castellanii.fa header_Phanerochaete_chrysosporium.fa header_Allomyces_macrogynus.fa header_ Batrachochytrium_dendrobatidis.fa header_Besnoitia_besnoiti.fa header_Bos_taurus.fa header_Cryptosporidium_hominis.fa header_Cryptococcus_neoformans.fa header_Cryptosporidium_muris.fa header_Cryptosporidium_parvum.fa header_Cystoisospora_suis.fa header_Cryptosporidium_tyzzeri.fa header_Cryptosporidium_meleagridis.fa header_Eimeria_acervulina.fa header_Eimeria_mitis.fa header_Eimeria_necatrix.fa header_Homo_sapiens.fa header_Mus_musculus.fa header_Hammondia_hammondi.fa header_Mucor_circinelloides.fa header_Kwoniella_bestiolae.fa header_Cryptococcus_gattii.fa header_Kwoniella_heveanensis.fa header_Cyclospora_cayetanensis.fa header_Macaca_mulatta.fa header_Neospora_caninum.fa header_Phycomyces_blakesleeanus.fa header_Globisporangium_iwayamae.fa header_Rhizopus_delemar.fa header_Sarcocystis_neurona.fa header_Spizellomyces_punctatus.fa header_Ustilago_maydis.fa header_Vitrella_brassicaformis.fa header_Cryptosporidium_andersoni.fa header_Cryptosporidium_ubiquitum.fa header_Sporisorium_reilianum.fa > TGBDP6_Phylogenetics_Trees_4.fa
-	
+		# Plasmodium falciparum 3D7 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}'  PF3D7_1475600.fa > Plasmodium_falciparum.fa
+			awk '/^>/{print ">Plasmodium_falciparum" ++i; next}{print}' Plasmodium_falciparum.fa > header_Plasmodium_falciparum.fa
+		#Plasmodium reichenowi G01
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}'  PRG01_1475400.fa > Plasmodium_reichenowi.fa
+			awk '/^>/{print ">Plasmodium_reichenowi" ++i; next}{print}' Plasmodium_reichenowi.fa > header_Plasmodium_reichenowi.fa
+		#Plasmodium gaboni strain SY75
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}'  PGSY75_1475600.fa > Plasmodium_gaboni.fa
+			awk '/^>/{print ">Plasmodium_gaboni " ++i; next}{print}' Plasmodium_gaboni.fa > header_Plasmodium_gaboni.fa
+		#Plasmodium vivax Sal-1
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}'  PVX_118655.fa > Plasmodium_vivax.fa
+			awk '/^>/{print ">Plasmodium_vivax" ++i; next}{print}' Plasmodium_vivax.fa > header_Plasmodium_vivax.fa
+		#Plasmodium ovale curtisi GH01
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}'  PocGH01_12078300.fa > Plasmodium_ovale.fa
+			awk '/^>/{print ">Plasmodium_ovale" ++i; next}{print}' Plasmodium_ovale.fa > header_Plasmodium_ovale.fa
+		#Plasmodium knowlesi strain H
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}'  PKNH_1245900.fa > Plasmodium_knowlesi.fa
+			awk '/^>/{print ">Plasmodium_knowlesi" ++i; next}{print}' Plasmodium_knowlesi.fa > header_Plasmodium_knowlesi.fa
+		#Plasmodium malariae UG01
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}'  PmUG01_12080500.fa > Plasmodium_malariae.fa
+			awk '/^>/{print ">Plasmodium_malariae " ++i; next}{print}' Plasmodium_malariae.fa > header_Plasmodium_malariae.fa
+	cat header_Toxoplasma_gondii.fa header_Acanthamoeba_castellanii.fa header_Acanthamoeba_castellanii.fa header_Phanerochaete_chrysosporium.fa header_Allomyces_macrogynus.fa header_ Batrachochytrium_dendrobatidis.fa header_Besnoitia_besnoiti.fa header_Bos_taurus.fa header_Cryptosporidium_hominis.fa header_Cryptococcus_neoformans.fa header_Cryptosporidium_muris.fa header_Cryptosporidium_parvum.fa header_Cystoisospora_suis.fa header_Cryptosporidium_tyzzeri.fa header_Cryptosporidium_meleagridis.fa header_Eimeria_acervulina.fa header_Eimeria_mitis.fa header_Eimeria_necatrix.fa header_Homo_sapiens.fa header_Mus_musculus.fa header_Hammondia_hammondi.fa header_Mucor_circinelloides.fa header_Kwoniella_bestiolae.fa header_Cryptococcus_gattii.fa header_Kwoniella_heveanensis.fa header_Cyclospora_cayetanensis.fa header_Macaca_mulatta.fa header_Neospora_caninum.fa header_Phycomyces_blakesleeanus.fa header_Globisporangium_iwayamae.fa header_Rhizopus_delemar.fa header_Sarcocystis_neurona.fa header_Spizellomyces_punctatus.fa header_Ustilago_maydis.fa header_Vitrella_brassicaformis.fa header_Cryptosporidium_andersoni.fa header_Cryptosporidium_ubiquitum.fa header_Sporisorium_reilianum.fa header_Plasmodium_falciparum.fa header_Plasmodium_reichenowi.fa header_Plasmodium_gaboni.fa header_Plasmodium_vivax.fa header_Plasmodium_ovale.fa header_Plasmodium_knowlesi.fa header_Plasmodium_malariae.fa > TGBDP6_Phylogenetics_Trees_4.fa
+
 	mafft --auto TGBDP6_Phylogenetics_Trees_4.fa > Output_TGBDP6_Phylogenetics_Tree_4.fa
 	iqtree -s Output_TGBDP6_Phylogenetics_Tree_4.fa -m LG -bb 1000 -pre output
 	cat output.contree
