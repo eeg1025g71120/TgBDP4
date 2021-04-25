@@ -421,5 +421,57 @@ The Output:
 		# Mucor circinelloides 1006PhL 
 			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' HMPREF1544_04515.fa > Mucor_circinelloides.fa
 			awk '/^>/{print "> Mucor_circinelloides" ++i; next}{print}' Mucor_circinelloides.fa > header_Mucor_circinelloides.fa
-
+		# Kwoniella bestiolae CBS 10118 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' I302_05158.fa > Kwoniella_bestiolae.fa
+			awk '/^>/{print "> Kwoniella_bestiolae" ++i; next}{print}' Kwoniella_bestiolae.fa > header_Kwoniella_bestiolae.fa
+		# Cryptococcus gattii VGIV IND107 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' I308_01860.fa > Cryptococcus_gattii.fa
+			awk '/^>/{print ">Cryptococcus_gattii" ++i; next}{print}' Cryptococcus_gattii.fa > header_Cryptococcus_gattii.fa
+		# Kwoniella heveanensis CBS 569 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' I317_06430.fa > Kwoniella_heveanensis.fa
+			awk '/^>/{print "> Kwoniella_heveanensis" ++i; next}{print}' Kwoniella_heveanensis.fa > header_Kwoniella_heveanensis.fa
+		# Cyclospora cayetanensis isolate NF1_C8
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' LOC34618577.fa > Cyclospora_cayetanensis.fa
+			awk '/^>/{print "> Cyclospora_cayetanensis" ++i; next}{print}' Cyclospora_cayetanensis.fa > header_Cyclospora_cayetanensis.fa
+		# Macaca mulatta isolate 17573
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' MACM_27154.fa > Macaca_mulatta.fa
+			awk '/^>/{print "> Macaca_mulatta" ++i; next}{print}' Macaca_mulatta.fa > header_Macaca_mulatta.fa
+		# Neospora caninum Liverpool 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' NCLIV_044660.fa > Neospora_caninum.fa
+			awk '/^>/{print ">Neospora_caninum " ++i; next}{print}' Neospora_caninum.fa > header_Neospora_caninum.fa
+		# Phycomyces blakesleeanus
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' PHYBL_128978.fa > Phycomyces_blakesleeanus.fa
+			awk '/^>/{print ">Phycomyces_blakesleeanus" ++i; next}{print}' Phycomyces_blakesleeanus.fa > header_Phycomyces_blakesleeanus.fa
+		# Globisporangium iwayamae DAOM BR242034
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' PIW_G002910.fa > Globisporangium_iwayamae.fa
+			awk '/^>/{print ">Globisporangium_iwayamae" ++i; next}{print}' Globisporangium_iwayamae.fa > header_Globisporangium_iwayamae.fa
+		# Rhizopus delemar RA 99-880 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' RO3G_02044.fa > Rhizopus_delemar.fa
+			awk '/^>/{print ">Rhizopus_delemar" ++i; next}{print}' Rhizopus_delemar.fa > header_Rhizopus_delemar.fa
+		# Sarcocystis neurona SN3
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' SN3_01400140.fa > Sarcocystis_neurona.fa
+			awk '/^>/{print ">Sarcocystis_neurona" ++i; next}{print}' Sarcocystis_neurona.fa > header_Sarcocystis_neurona.fa
+		# Spizellomyces punctatus DAOM BR117
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' SPPG_08745.fa > Spizellomyces_punctatus.fa
+			awk '/^>/{print ">Spizellomyces_punctatus" ++i; next}{print}' Spizellomyces_punctatus.fa > header_Spizellomyces_punctatus.fa
+		# Ustilago maydis 521
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' UMAG_06029.fa > Ustilago_maydis.fa
+			awk '/^>/{print ">Ustilago_maydis" ++i; next}{print}' Ustilago_maydis.fa > header_Ustilago_maydis.fa
+		# Vitrella brassicaformis CCMP3155
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' Vbra_14604.fa > Vitrella_brassicaformis.fa
+			awk '/^>/{print ">Vitrella_brassicaformis" ++i; next}{print}' Vitrella_brassicaformis.fa > header_Vitrella_brassicaformis.fa
+		# Cryptosporidium andersoni isolate 30847
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' cand_029210.fa > Cryptosporidium_andersoni.fa
+			awk '/^>/{print ">Cryptosporidium_andersoni" ++i; next}{print}' Cryptosporidium_andersoni.fa > header_Cryptosporidium_andersoni.fa
+		# Cryptosporidium ubiquitum isolate 39726
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' cubi_02786.fa > Cryptosporidium_ubiquitum.fa
+			awk '/^>/{print ">Cryptosporidium_ubiquitum" ++i; next}{print}' Cryptosporidium_ubiquitum.fa > header_Cryptosporidium_ubiquitum.fa
+		# Sporisorium reilianum SRZ2 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' sr16504.fa > Sporisorium_reilianum.fa
+			awk '/^>/{print ">Sporisorium_reilianum" ++i; next}{print}' Sporisorium_reilianum.fa > header_Sporisorium_reilianum.fa
+	cat header_Toxoplasma_gondii.fa header_Acanthamoeba_castellanii.fa header_Acanthamoeba_castellanii.fa header_Phanerochaete_chrysosporium.fa header_Allomyces_macrogynus.fa header_ Batrachochytrium_dendrobatidis.fa header_Besnoitia_besnoiti.fa header_Bos_taurus.fa header_Cryptosporidium_hominis.fa header_Cryptococcus_neoformans.fa header_Cryptosporidium_muris.fa header_Cryptosporidium_parvum.fa header_Cystoisospora_suis.fa header_Cryptosporidium_tyzzeri.fa header_Cryptosporidium_meleagridis.fa header_Eimeria_acervulina.fa header_Eimeria_mitis.fa header_Eimeria_necatrix.fa header_Homo_sapiens.fa header_Mus_musculus.fa header_Hammondia_hammondi.fa header_Mucor_circinelloides.fa header_Kwoniella_bestiolae.fa header_Cryptococcus_gattii.fa header_Kwoniella_heveanensis.fa header_Cyclospora_cayetanensis.fa header_Macaca_mulatta.fa header_Neospora_caninum.fa header_Phycomyces_blakesleeanus.fa header_Globisporangium_iwayamae.fa header_Rhizopus_delemar.fa header_Sarcocystis_neurona.fa header_Spizellomyces_punctatus.fa header_Ustilago_maydis.fa header_Vitrella_brassicaformis.fa header_Cryptosporidium_andersoni.fa header_Cryptosporidium_ubiquitum.fa header_Sporisorium_reilianum.fa > TGBDP6_Phylogenetics_Trees_4.fa
+	
+	mafft --auto TGBDP6_Phylogenetics_Trees_4.fa > Output_TGBDP6_Phylogenetics_Tree_4.fa
+	iqtree -s Output_TGBDP6_Phylogenetics_Tree_4.fa -m LG -bb 1000 -pre output
+	cat output.contree
 
