@@ -357,3 +357,69 @@ The Output:
 	(Toxoplasma_gondii_ME491:0.258297,(Neospora_caninum1:0.143118,Cystoisospora_suis1:0.313194)92:0.106610,(Besnoitia_besnoiti1:0.340847,((((Eimeria_praecox1:0.000002,(Eimeria_mitis1:0.000002,Eimeria_acervuline1:0.074491)100:0.049649)99:0.043755,Cyclospora_cayetanensis1:0.115521)99:0.111957,Eimeria_necatrix1:0.070021)100:0.308403,((((Eimeria_mitis2:0.000003,Eimeria_necatrix2:0.281481)80:0.016224,Eimeria_acervuline2:0.045379)100:0.340717,Cyclospora_cayetanensis2:0.000002)100:0.760381,((((Cryptosporidium_felis1:0.084187,(Cryptosporidium_ubiquitum1:0.000002,(Cryptosporidium_meleagridis1:0.009591,((Cryptosporidium_parvum1:0.000000,Cryptosporidium_tyzzeri1:0.000000):0.000002,Cryptosporidium_hominis1:0.000002)100:0.009742)99:0.029492)98:0.014971)96:0.092512,(Cryptosporidium_andersoni1:0.009782,Cryptosporidium_muris1:0.000002)100:0.109065)100:0.604914,((((Marchantia_polymorpha1:0.077114,Ceratodon_purpureus1:0.305611)98:0.107755,((((Trifolium_subterraneum1:0.000002,Trifolium_pratense1:0.019131)100:0.210519,(Musa_balbisiana1:0.015486,Musa_acuminata1:0.026083)100:0.351090)97:0.110763,Thalictrum_thalictroides1:0.274367)98:0.093828,(((Elaeis_guineensis1:0.017427,Phoenix_dactylifera1:0.061622)93:0.025104,((Ananas_comosus1:0.106175,Vanilla_planifolia1:0.153688)76:0.017652,(Eragrostis_curvula1:0.030986,Digitaria_exilis1:0.280184)98:0.162235)53:0.045414)55:0.088247,(Populus_euphratica1:0.006916,(Populus_deltoides1:0.006875,Populus_trichocarpa1:0.000002)87:0.006834)100:0.207880)78:0.169309)100:0.279607)97:0.124846,Chara_braunii1:0.188892)99:0.276637,Coregonus_sp1:0.704925)86:0.186629)86:0.272297,(((Cryptosporidium_felis2:0.109477,(Cryptosporidium_ubiquitum2:0.085285,(Cryptosporidium_meleagridis2:0.010152,(Cryptosporidium_parvum2:0.000002,(Cryptosporidium_hominis2:0.000002,Cryptosporidium_tyzzeri2:0.012595)35:0.000002)30:0.000002)95:0.067205)92:0.069059)88:0.165273,(Cryptosporidium_andersoni2:0.000003,Cryptosporidium_muris2:0.030957)99:0.188337)99:0.792215,((((((Plasmodium_Falciparum:0.000002,Plasmodium_sp_gorilla1:0.000003)97:0.015024,Plasmodium_reichenowi1:0.000002)87:0.021046,((((Hepatocystis_sp1:0.218234,Plasmodium_malariae1:0.004672)82:0.047435,((((Plasmodium_vivax1:0.009313,Plasmodium_inui1:0.038405)85:0.009568,Plasmodium_fragile1:0.028413)43:0.000003,Plasmodium_knowlesi1:0.048914)90:0.027777,Plasmodium_gonderi1:0.012070)99:0.095661)71:0.024488,Plasmodium_ovale1:0.047680)78:0.017973,(Plasmodium_relictum1:0.052895,Plasmodium_gallinaceum1:0.025699)90:0.090698)80:0.194702)54:0.031813,(Plasmodium_gaboni1:0.000002,Plasmodium_sp_DRC-Itaito1:0.000002)69:0.000002)72:0.365455,((Plasmodium_reichenowi2:0.018116,(Plasmodium_gaboni2:0.000002,Plasmodium_sp_DRC-Itaito2:0.000002)100:0.117953)84:0.084006,((((((Hepatocystis_sp2:0.700580,(Plasmodium_vivax2:0.000002,Plasmodium_inui2:0.062767)42:0.000002)43:0.011897,Plasmodium_knowlesi2:0.024823)41:0.008576,Plasmodium_fragile2:0.007281)42:0.039867,Plasmodium_gonderi2:0.042030)85:0.081688,(Plasmodium_relictum2:0.000002,Plasmodium_gallinaceum2:0.094589)100:0.187157)47:0.010960,Plasmodium_ovale2:0.101369)96:0.189296)100:2.005728)83:0.642211,Theileria_equi1:0.375639)75:0.244679)80:0.283121)77:0.048037)87:0.142786)87:0.131648)82:0.082490);
 
 
+# Phylogenomics Analysis of TGBDP4 predicted protein sequence with Extended data
+		#Toxoplasma gondii ME49
+			 awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' TGME49_306460.fa > Toxoplasma_gondii.fa
+			 awk '/^>/{print ">Toxoplasma_gondii_ME49" ++i; next}{print}' Toxoplasma_gondii.fa > header_Toxoplasma_gondii.fa
+		# Acanthamoeba castellanii str. Neff
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' ACA1_215690.fa > Acanthamoeba_castellanii.fa
+			awk '/^>/{print "> Acanthamoeba_castellanii" ++i; next}{print}' Acanthamoeba_castellanii.fa > header_Acanthamoeba_castellanii.fa
+		# Phanerochaete chrysosporium
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' AGR57_3965.fa > Phanerochaete_chrysosporium.fa
+			awk '/^>/{print "> Phanerochaete_chrysosporium" ++i; next}{print}' Phanerochaete_chrysosporium.fa > header_Phanerochaete_chrysosporium.fa
+		# Allomyces macrogynus
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' AMAG_05489.fa > Allomyces_macrogynus.fa
+			awk '/^>/{print "> Allomyces_macrogynus" ++i; next}{print}' Allomyces macrogynus.fa > header_Allomyces_macrogynus.fa
+		# Batrachochytrium dendrobatidis
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' BDEG_07408.fa > Batrachochytrium_dendrobatidis.fa
+			awk '/^>/{print "> Batrachochytrium_dendrobatidis" ++i; next}{print}' Batrachochytrium_dendrobatidis.fa > header_ Batrachochytrium_dendrobatidis.fa
+		# Besnoitia besnoiti strain Bb-Ger1 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' BESB_018420.fa > Besnoitia_besnoiti.fa
+			awk '/^>/{print "> Besnoitia_besnoiti" ++i; next}{print}' Besnoitia_besnoiti.fa > header_Besnoitia_besnoiti.fa
+		# Bos taurus
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' BOS_21376.fa > Bos_taurus.fa
+			awk '/^>/{print "> Bos_taurus" ++i; next}{print}' Bos_taurus.fa > header_Bos_taurus.fa
+		# Cryptosporidium hominis UdeA01
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' CHUDEA7_1130.fa > Cryptosporidium_hominis.fa
+			awk '/^>/{print "> Cryptosporidium_hominis " ++i; next}{print}' Cryptosporidium_hominis.fa > header_Cryptosporidium_hominis.fa
+		# Cryptococcus neoformans var. grubii KN99 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' CKF44_00375.fa > Cryptococcus_neoformans.fa
+			awk '/^>/{print "> Cryptococcus_neoformans" ++i; next}{print}' Cryptococcus_neoformans.fa > header_Cryptococcus_neoformans.fa
+		#  Cryptosporidium muris RN66 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' CMU_033110.fa > Cryptosporidium_muris.fa
+			awk '/^>/{print "> Cryptosporidium_muris" ++i; next}{print}' Cryptosporidium_muris.fa > header_Cryptosporidium_muris.fa
+		#Cryptosporidium parvum IOWA-ATCC
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' CPATCC_0006870.fa > Cryptosporidium_parvum.fa
+			awk '/^>/{print ">Cryptosporidium_parvum" ++i; next}{print}' Cryptosporidium_parvum.fa > header_Cryptosporidium_parvum.fa
+		# Cystoisospora suis strain Wien I 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' CSUI_003223.fa > Cystoisospora_suis.fa
+			awk '/^>/{print "> Cystoisospora_suis " ++i; next}{print}' Cystoisospora_suis.fa > header_Cystoisospora_suis.fa
+		#Cryptosporidium tyzzeri isolate UGA55
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' CTYZ_00000707.fa > Cryptosporidium_tyzzeri.fa
+			awk '/^>/{print "> Cryptosporidium_tyzzeri" ++i; next}{print}' Cryptosporidium_tyzzeri.fa > header_Cryptosporidium_tyzzeri.fa
+		# Cryptosporidium meleagridis strain UKMEL1 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' CmeUKMEL1_10795.fa > Cryptosporidium_meleagridis.fa
+			awk '/^>/{print "> Cryptosporidium_meleagridis" ++i; next}{print}' Cryptosporidium_meleagridis.fa > header_Cryptosporidium_meleagridis.fa
+		# Eimeria acervulina Houghton
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' EAH_00010620.fa > Eimeria_acervulina.fa
+			awk '/^>/{print "> Eimeria_acervulina" ++i; next}{print}' Eimeria_acervulina.fa > header_Eimeria_acervulina.fa
+		# Eimeria mitis Houghton
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' EMH_0040220.fa > Eimeria_mitis.fa
+			awk '/^>/{print "> Eimeria_mitis" ++i; next}{print}' Eimeria_mitis.fa > header_Eimeria_mitis.fa
+		# Eimeria necatrix Houghton 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' ENH_00043160.fa > Eimeria_necatrix.fa
+			awk '/^>/{print "> Eimeria_necatrix" ++i; next}{print}' Eimeria_necatrix.fa > header_Eimeria_necatrix.fa
+		# Homo sapiens REF 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' ENSG0000009607019.fa > Homo_sapiens.fa
+			awk '/^>/{print "> Homo_sapiens" ++i; next}{print}' Homo_sapiens.fa > header_Homo_sapiens.fa
+		# Mus musculus C57BL6J 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' ENSMUSG0000006395215.fa > Mus_musculus.fa
+			 awk '/^>/{print "> Mus_musculus" ++i; next}{print}' Mus_musculus.fa > header_Mus_musculus.fa
+		# Hammondia hammondi strain H.H.34 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' HHA_306460.fa > Hammondia_hammondi.fa
+			awk '/^>/{print "> Hammondia_hammondi" ++i; next}{print}' Hammondia_hammondi.fa > header_Hammondia_hammondi.fa
+		# Mucor circinelloides 1006PhL 
+			awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' HMPREF1544_04515.fa > Mucor_circinelloides.fa
+			awk '/^>/{print "> Mucor_circinelloides" ++i; next}{print}' Mucor_circinelloides.fa > header_Mucor_circinelloides.fa
+
+
